@@ -25,4 +25,4 @@ GDB_MULTIARCH_PATH=$(which gdb-multiarch)
 sudo ln -s $GDB_MULTIARCH_PATH /opt/MatrixMCU/bin/arm-none-eabi-gdb
 
 # Add /opt/MatrixMCU/bin to PATH
-echo 'export PATH=/opt/MatrixMCU/bin:$PATH # Required for MatrixMCU toolkit' >> ~/.bashrc
+#echo 'export PATH=/opt/MatrixMCU/bin:$PATH # Required for MatrixMCU toolkit' >> ~/.bashrc
