@@ -2,7 +2,7 @@
 
 # Create a directory for the project
 mkdir ./project
-mv -T * ./project/
+mv * ./project/
 
 # Update package list
 sudo apt update
@@ -54,7 +54,4 @@ sudo apt install sunxi-tools
 
 curl -L -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/greenlsi/qemu_new/releases/latest | jq -r '.assets[0].browser_download_url' | xargs wget -q
 
-tar -xvf qemu-system-arm.tar.xz -C $(pwd)/
-
-#gives execution permissions to execute qemu
-chmod +x $(pwd)/build -R
+tar -xvf qemu-system-arm.tar.xz -C $(pwd)
